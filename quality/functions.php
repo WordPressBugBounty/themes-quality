@@ -222,16 +222,18 @@ function quality_change_logo_class($quality_html) {
 }
 
 //Custom CSS compatibility
-$quality_current_options = wp_parse_args(get_option('quality_pro_options', array()), quality_theme_data_setup());
-if ($quality_current_options['webrit_custom_css'] != '' && $quality_current_options['webrit_custom_css'] != 'nomorenow') {
-    $quality_css = '';
-    $quality_css .= $quality_current_options['webrit_custom_css'];
-    $quality_css .= (string) wp_get_custom_css(get_stylesheet());
-    $quality_current_options['webrit_custom_css'] = 'nomorenow';
-    update_option('quality_pro_options', $quality_current_options);
-    wp_update_custom_css_post($quality_css, array());
+function quality_custom_css_compatibility() {
+    $quality_current_options = wp_parse_args(get_option('quality_pro_options', array()), quality_theme_data_setup());
+    if ($quality_current_options['webrit_custom_css'] != '' && $quality_current_options['webrit_custom_css'] != 'nomorenow') {
+        $quality_css = '';
+        $quality_css .= $quality_current_options['webrit_custom_css'];
+        $quality_css .= (string) wp_get_custom_css(get_stylesheet());
+        $quality_current_options['webrit_custom_css'] = 'nomorenow';
+        update_option('quality_pro_options', $quality_current_options);
+        wp_update_custom_css_post($quality_css, array());
+    }
 }
-
+add_action('wp_loaded', 'quality_custom_css_compatibility');
 /**
  * Fix skip link focus in IE11.
  *

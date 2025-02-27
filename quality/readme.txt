@@ -3,8 +3,8 @@
 Contributors: priyanshumittal
 Tags: full-width-template, threaded-comments, custom-menu, two-columns, translation-ready, sticky-post, blog, footer-widgets, featured-images, right-sidebar
 Requires at least: 4.5
-Tested up to: 6.6
-Stable tag: 2.8
+Tested up to: 6.7
+Stable tag: 2.8.1
 Requires PHP: 5.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -43,6 +43,9 @@ Do you enjoy this theme? Send your ideas - issues - on the theme forum . Thank y
 Keyboard navigation is working properly in the forward direction by using the tab key. For the reverse direction, Shift+Tab key is working on all the parent menus and if the dropdown menus are open then it is working on it. The focus is moving back to the parent menu having submenus from the next menu in a reverse direction.
 
 == Changelog ==
+
+@Version 2.8.1
+1. Fixed error notice issue.
 
 @Version 2.8
 1. Updated the options page.
@@ -361,7 +364,7 @@ Do you enjoy this theme? Send your ideas - issues - on the theme forum . Thank y
 License
 -------
 
-Quality WordPress Theme, Copyright 2014-2023 priyanshumittal
+Quality WordPress Theme, Copyright 2014-2025 priyanshumittal
 Quality WordPress Theme is distributed under the terms of the GNU GPL
 
 This program is free software: you can redistribute it and/or modify
@@ -429,4 +432,4 @@ License: Under the terms of the GNU General Public License
 Source: https://wordpress.org/plugins/woocommerce/
 
 * Images on /images folder
-Copyright (C) 2014-2024, Webriti and available as [GPLv2](https://www.gnu.org/licenses/gpl-2.0.html)
+Copyright (C) 2014-2025, Webriti and available as [GPLv2](https://www.gnu.org/licenses/gpl-2.0.html)
